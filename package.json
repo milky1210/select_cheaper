@@ -1,0 +1,12 @@
+{
+  "name": "docchi-ga-yasui",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node dev-server.mjs",
+    "build": "node build.mjs",
+    "preview": "node dev-server.mjs dist",
+    "test": "node test.mjs"
+  }
+}
