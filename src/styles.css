@@ -7,6 +7,7 @@
 .segmented.difficulties,.segmented.choice-setting{grid-template-columns:repeat(4,1fr)}
 .segmented.difficulties button{font-size:10px}
 .cards.many{gap:10px}
+.cards.choices-2{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:1fr;gap:12px}
 .cards.choices-3{grid-template-columns:repeat(3,minmax(0,1fr))}
 .cards.choices-4{grid-template-columns:repeat(4,minmax(0,1fr))}
 .cards.choices-5{grid-template-columns:repeat(5,minmax(0,1fr))}
@@ -22,7 +23,8 @@
 
 @media(max-width:600px){
   .segmented.difficulties{grid-template-columns:repeat(2,1fr)}
-  .cards.many{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+  .cards.choices-2{grid-template-columns:1fr;grid-template-rows:repeat(2,auto);gap:8px}
+  .cards.many{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(3,auto);grid-auto-rows:auto;gap:7px}
   .cards.many .product-card{width:100%;height:min(20dvh,158px);min-height:132px;padding:8px;border-radius:17px}
   .cards.many .product-card .side-label{top:8px;left:8px;width:25px;height:25px;border-radius:8px;font-size:11px}
   .cards.many .item-count strong{font-size:39px}
