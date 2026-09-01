@@ -3,3 +3,32 @@
 @media(max-width:600px){.app{padding:17px}.home{min-height:calc(100dvh - 34px)}.brand-mark{width:56px;height:56px;border-radius:18px}.home .eyebrow{margin-top:13px}.home h1{font-size:52px}.intro{margin:13px 0 20px;font-size:12px}.setting{margin-bottom:10px}.primary{padding:14px}.mini-best{margin-top:10px}.game{min-height:calc(100dvh - 34px)}.game-title{margin:auto 0 12px}.cards{grid-template-columns:1fr;grid-template-rows:1fr 34px 1fr}.product-card{width:100%;min-height:0;height:min(31dvh,230px);padding:15px;border-radius:22px}.product-card .side-label{top:12px;left:13px;width:30px;height:30px}.item-count strong{font-size:min(17vw,72px)}.item-price strong{font-size:min(12vw,52px)}.divider{margin:6px}.tap-hint{bottom:9px}.versus{width:40px;height:40px}.mode-label{margin-top:auto;padding-top:8px}.result{padding-top:12px}.record{margin-top:18px}.answer-products span{font-size:10px}}
 @media(max-height:700px) and (max-width:600px){.game-title{margin:9px 0 6px}.game-title h2{font-size:23px}.product-card{height:27dvh}.item-count strong{font-size:48px}.item-price strong{font-size:36px}.tap-hint{display:none}.mode-label{display:none}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+.segmented.difficulties,.segmented.choice-setting{grid-template-columns:repeat(4,1fr)}
+.segmented.difficulties button{font-size:10px}
+.cards.many{gap:10px}
+.cards.choices-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.cards.choices-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.cards.choices-5{grid-template-columns:repeat(5,minmax(0,1fr))}
+.cards.many .product-card{min-height:255px;padding:15px}
+.cards.many .item-count strong{font-size:clamp(38px,6vw,64px)}
+.cards.many .item-price strong{font-size:clamp(27px,4vw,44px)}
+.choice-0{border-color:#ded4fb}.choice-0 .side-label{background:#7046e8}
+.choice-1{border-color:#ffe0cb}.choice-1 .side-label{background:#ff8b3d}
+.choice-2{border-color:#cceedd}.choice-2 .side-label{background:#20aa73}
+.choice-3{border-color:#cde5ff}.choice-3 .side-label{background:#308bd8}
+.choice-4{border-color:#f6cfe5}.choice-4 .side-label{background:#d94f98}
+.multi-result{grid-template-columns:repeat(2,minmax(0,1fr))}
+
+@media(max-width:600px){
+  .segmented.difficulties{grid-template-columns:repeat(2,1fr)}
+  .cards.many{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+  .cards.many .product-card{width:100%;height:min(20dvh,158px);min-height:132px;padding:8px;border-radius:17px}
+  .cards.many .product-card .side-label{top:8px;left:8px;width:25px;height:25px;border-radius:8px;font-size:11px}
+  .cards.many .item-count strong{font-size:39px}
+  .cards.many .item-price strong{font-size:27px}
+  .cards.many .product-card small{font-size:11px}
+  .cards.many .divider{margin:3px}
+  .cards.many .tap-hint{display:none}
+  .cards.choices-5 .product-card:last-child{grid-column:1/-1;width:calc(50% - 4px);justify-self:center}
+}
